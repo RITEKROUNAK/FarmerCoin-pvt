@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "authors",
+  "info": {
+    "singularName": "author",
+    "pluralName": "authors",
+    "displayName": "authors",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "username": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "social": {
+      "type": "string"
+    },
+    "wallet": {
+      "type": "string"
+    },
+    "followers": {
+      "type": "integer"
+    },
+    "about": {
+      "type": "text"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "hot_collections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::hot-collection.hot-collection",
+      "mappedBy": "author"
+    },
+    "bid": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::bid.bid",
+      "inversedBy": "author"
+    },
+    "nfts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nft.nft",
+      "mappedBy": "author"
+    },
+    "author_sale": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author-sale.author-sale",
+      "inversedBy": "author"
+    }
+  }
+}

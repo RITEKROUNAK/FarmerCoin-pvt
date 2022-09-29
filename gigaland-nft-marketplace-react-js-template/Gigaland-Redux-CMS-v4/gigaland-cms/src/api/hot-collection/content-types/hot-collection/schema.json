@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hot_collections",
+  "info": {
+    "singularName": "hot-collection",
+    "pluralName": "hot-collections",
+    "displayName": "hot_collection"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "unique_id": {
+      "type": "string"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "hot_collections"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

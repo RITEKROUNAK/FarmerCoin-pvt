@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bids",
+  "info": {
+    "singularName": "bid",
+    "pluralName": "bids",
+    "displayName": "bid"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "value": {
+      "type": "decimal"
+    },
+    "nft": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nft.nft",
+      "inversedBy": "bids"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author",
+      "mappedBy": "bid"
+    }
+  }
+}

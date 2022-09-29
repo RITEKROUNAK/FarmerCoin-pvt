@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "author_sales",
+  "info": {
+    "singularName": "author-sale",
+    "pluralName": "author-sales",
+    "displayName": "author_sales",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sales": {
+      "type": "float"
+    },
+    "volume": {
+      "type": "decimal"
+    },
+    "daily_sales": {
+      "type": "float"
+    },
+    "weekly_sales": {
+      "type": "float"
+    },
+    "floor_price": {
+      "type": "float"
+    },
+    "owners": {
+      "type": "float"
+    },
+    "assets": {
+      "type": "float"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author",
+      "inversedBy": "author_sale"
+    }
+  }
+}

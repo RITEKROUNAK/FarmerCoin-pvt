@@ -1,0 +1,121 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nfts",
+  "info": {
+    "singularName": "nft",
+    "pluralName": "nfts",
+    "displayName": "nft"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "unique_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "art",
+        "music",
+        "domain_names",
+        "virtual_world",
+        "trading_cards",
+        "collectibles",
+        "sports",
+        "utility"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "buy_now",
+        "on_auction",
+        "has_offers"
+      ]
+    },
+    "item_type": {
+      "type": "enumeration",
+      "enum": [
+        "single_items",
+        "bundles"
+      ]
+    },
+    "collections": {
+      "type": "enumeration",
+      "enum": [
+        "abstraction",
+        "patternlicious",
+        "skecthify",
+        "cartoonism",
+        "virtuland",
+        "papercut"
+      ]
+    },
+    "deadline": {
+      "type": "date"
+    },
+    "author_link": {
+      "type": "string"
+    },
+    "nft_link": {
+      "type": "string"
+    },
+    "bid_link": {
+      "type": "string"
+    },
+    "preview_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "bid": {
+      "type": "integer"
+    },
+    "max_bid": {
+      "type": "integer"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "priceover": {
+      "type": "float"
+    },
+    "showcase": {
+      "type": "boolean",
+      "default": false
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "bids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bid.bid",
+      "mappedBy": "nft"
+    },
+    "author": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::author.author",
+      "inversedBy": "nfts"
+    }
+  }
+}
