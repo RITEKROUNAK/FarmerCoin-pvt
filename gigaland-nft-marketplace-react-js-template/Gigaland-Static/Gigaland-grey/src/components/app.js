@@ -64,11 +64,10 @@ const app= () => (
     <Header/>
       <PosedRouter>
       <ScrollTop path="/">
-        <Home exact path="/">
-          <Redirect to="/home" />
-        </Home>
-        <Home1 path="/home1" />
-        <Home2 path="/home2" />
+        <Home2 exact path="/">
+          <Redirect to="/home2" />
+        </Home2>
+        
         <Explore path="/explore" />
         <Explore2 path="/explore2" />
         <Helpcenter path="/helpcenter" />
