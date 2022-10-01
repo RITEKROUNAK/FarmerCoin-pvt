@@ -162,7 +162,7 @@ const homeone= () => (
         </div>
       </section>
 
-      <section className='container no-top no-bottom'>
+      {/* <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2'>
@@ -170,13 +170,13 @@ const homeone= () => (
           </div>
         </div> 
         <CarouselNew/>
-      </section>
+      </section> */}
 
       <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12'>
-              <h2>Top Sellers</h2>
+              <h2>Top Donors</h2>
           </div>
           <div className='col-lg-12'>
             <AuthorList/>
@@ -184,7 +184,7 @@ const homeone= () => (
         </div>
       </section>
 
-      <section className='container no-top no-bottom'>
+      {/* <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12 mb-2'>
@@ -194,17 +194,7 @@ const homeone= () => (
               <CarouselCollection/>
             </div>
           </div>
-      </section>
-
-      <section className='container no-top'>
-        <div className='row'>
-            <div className="spacer-double"></div>
-            <div className='col-lg-12 mb-3'>
-              <h2>Create and Sell Now</h2>
-            </div>
-            <FeatureBox/>
-        </div>
-      </section>
+      </section> */}
 
     <Footer />
 

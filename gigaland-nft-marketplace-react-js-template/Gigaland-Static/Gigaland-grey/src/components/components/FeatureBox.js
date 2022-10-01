@@ -18,7 +18,7 @@ const fadeInUp = keyframes`
 const featurebox= () => (
  <div className='row'>
             <div className="col-lg-4 col-md-6 mb-3">
-                <div className="feature-box f-boxed style-3">
+                {/* <div className="feature-box f-boxed style-3">
                   <Reveal className='onStep' keyframes={fadeInUp} delay={0} duration={600} triggerOnce>
                     <i className="bg-color-2 i-boxed icon_wallet"></i>
                   </Reveal>
@@ -31,11 +31,11 @@ const featurebox= () => (
                       </Reveal>
                     </div>
                     <i className="wm icon_wallet"></i>
-                </div>
+                </div> */}
             </div>
 
           <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-box f-boxed style-3">
+              {/* <div className="feature-box f-boxed style-3">
                 <Reveal className='onStep' keyframes={fadeInUp} delay={0} duration={600} triggerOnce>
                   <i className=" bg-color-2 i-boxed icon_cloud-upload_alt"></i>
                 </Reveal>
@@ -48,11 +48,11 @@ const featurebox= () => (
                     </Reveal>
                   </div>
                   <i className="wm icon_cloud-upload_alt"></i>
-              </div>
+              </div> */}
           </div>
 
           <div className="col-lg-4 col-md-6 mb-3">
-              <div className="feature-box f-boxed style-3">
+              {/* <div className="feature-box f-boxed style-3">
                 <Reveal className='onStep' keyframes={fadeInUp} delay={0} duration={600} triggerOnce>
                   <i className=" bg-color-2 i-boxed icon_tags_alt"></i>
                 </Reveal>
@@ -65,7 +65,7 @@ const featurebox= () => (
                     </Reveal>
                   </div>
                   <i className="wm icon_tags_alt"></i>
-              </div>
+              </div> */}
           </div>
         </div>
 );
