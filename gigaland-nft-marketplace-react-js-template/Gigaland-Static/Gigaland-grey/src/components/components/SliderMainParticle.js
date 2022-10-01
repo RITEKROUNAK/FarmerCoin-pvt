@@ -37,7 +37,7 @@ const slidermainparticle= () => (
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               <p className="lead col-white">
-              Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable
+              NFTs have proven to be a game changer for philanthropy. They are a powerful force for good that have helped raise and donate millions of dollars to both global and local causes.
               </p>
               </Reveal>
               <div className="spacer-10"></div>
@@ -53,7 +53,7 @@ const slidermainparticle= () => (
                           <div className="col-lg-4 col-md-6 col-sm-4 mb30">
                               <div className="de_count text-left">
                                   <h3><span>94215</span></h3>
-                                  <h5 className="id-color">Donors</h5>
+                                  <h5 className="id-color">New Donors</h5>
                               </div>
                           </div>
 
