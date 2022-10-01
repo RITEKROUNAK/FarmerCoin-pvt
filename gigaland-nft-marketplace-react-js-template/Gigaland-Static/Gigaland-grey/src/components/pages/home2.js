@@ -1,6 +1,8 @@
 import React from 'react';
 import Particle from '../components/Particle';
 import SliderMainParticle from '../components/SliderMainParticle';
+import SliderMainParticle2 from '../components/SliderMainParticle2';
+import SliderMainParticle3 from '../components/SliderMainParticle3';
 import FeatureBox from '../components/FeatureBox';
 import CarouselCollection from '../components/CarouselCollection';
 import CarouselNew from '../components/CarouselNew';
@@ -161,6 +163,7 @@ const homeone= () => (
             </div>                                       
         </div>
       </section>
+      
 
       {/* <section className='container no-top no-bottom'>
         <div className='row'>
@@ -183,7 +186,8 @@ const homeone= () => (
           </div>
         </div>
       </section>
-
+      <SliderMainParticle2/>
+      <SliderMainParticle3/>
       {/* <section className='container no-top no-bottom'>
         <div className='row'>
           <div className="spacer-double"></div>
