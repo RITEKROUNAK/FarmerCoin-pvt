@@ -32,28 +32,28 @@ const Header= function() {
     const [openMenu1, setOpenMenu1] = React.useState(false);
     const [openMenu2, setOpenMenu2] = React.useState(false);
     const [openMenu3, setOpenMenu3] = React.useState(false);
-    const handleBtnClick = (): void => {
+    const handleBtnClick = () => {
       setOpenMenu(!openMenu);
     };
-    const handleBtnClick1 = (): void => {
+    const handleBtnClick1 = () => {
       setOpenMenu1(!openMenu1);
     };
-    const handleBtnClick2 = (): void => {
+    const handleBtnClick2 = () => {
       setOpenMenu2(!openMenu2);
     };
-    const handleBtnClick3 = (): void => {
+    const handleBtnClick3 = () => {
       setOpenMenu3(!openMenu3);
     };
-    const closeMenu = (): void => {
+    const closeMenu = () => {
       setOpenMenu(false);
     };
-    const closeMenu1 = (): void => {
+    const closeMenu1 = () => {
       setOpenMenu1(false);
     };
-    const closeMenu2 = (): void => {
+    const closeMenu2 = () => {
       setOpenMenu2(false);
     };
-    const closeMenu3 = (): void => {
+    const closeMenu3 = () => {
       setOpenMenu3(false);
     };
     const ref = useOnclickOutside(() => {
