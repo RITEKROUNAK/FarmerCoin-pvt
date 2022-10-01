@@ -31,9 +31,9 @@ const slidermainparticle= () => (
     <div className="row align-items-center">
           <div className="col-md-6">
               <div className="spacer-single"></div>
-              <h6> <span className="text-uppercase color">Gigaland Market</span></h6>
+              {/* <h6> <span className="text-uppercase color">Gigaland Market</span></h6> */}
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
-              <h1 className="col-white">Create, sell or collect digital items.</h1>
+              <h1 className="col-white">Lend a hand, to save the planet.</h1>
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               <p className="lead col-white">
@@ -42,7 +42,7 @@ const slidermainparticle= () => (
               </Reveal>
               <div className="spacer-10"></div>
               <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
-              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Explore</span>
+              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Start Today</span>
               <div className="mb-sm-30"></div>
               </Reveal>
 
@@ -53,21 +53,21 @@ const slidermainparticle= () => (
                           <div className="col-lg-4 col-md-6 col-sm-4 mb30">
                               <div className="de_count text-left">
                                   <h3><span>94215</span></h3>
-                                  <h5 className="id-color">Collectibles</h5>
+                                  <h5 className="id-color">Donors</h5>
                               </div>
                           </div>
 
                           <div className="col-lg-4 col-md-6 col-sm-4 mb30">
                               <div className="de_count text-left">
                                   <h3><span>27</span>k</h3>
-                                  <h5 className="id-color">Auctions</h5>
+                                  <h5 className="id-color">Trees Planted</h5>
                               </div>
                           </div>
 
                           <div className="col-lg-4 col-md-6 col-sm-4 mb30">
                               <div className="de_count text-left">
-                                  <h3><span>4</span>k</h3>
-                                  <h5 className="id-color">NFT Artist</h5>
+                                  <h3><span>14</span>k</h3>
+                                  <h5 className="id-color">Animal Helped</h5>
                               </div>
                           </div>
                       </div>
