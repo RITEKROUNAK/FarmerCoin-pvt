@@ -67,32 +67,7 @@ const app= () => (
         <Home2 exact path="/">
           <Redirect to="/home2" />
         </Home2>
-        
-        <Explore path="/explore" />
-        <Explore2 path="/explore2" />
-        <Helpcenter path="/helpcenter" />
-        <Rangking path="/rangking" />
-        <Colection path="/colection" />
-        <ItemDetail path="/ItemDetail" />
-        <Author path="/Author" />
-        <Wallet path="/wallet" />
-        <Login path="/login" />
-        <LoginTwo path="/loginTwo" />
-        <Register path="/register" />
-        <Price path="/price" />
-        <Works path="/works" />
-        <News path="/news" />
-        <Create path="/create" />
-        <Auction path="/Auction" />
-        <Activity path="/activity" />
-        <Contact path="/contact" />
-        <ElegantIcons path="/elegantIcons" />
-        <EtlineIcons path="/etlineIcons" />
-        <FontAwesomeIcons path="/fontAwesomeIcons" />
-        <Accordion path="/accordion" />
-        <Alerts path="/alerts" />
-        <Progressbar path="/progressbar" />
-        <Tabs path="/tabs" />
+      
         </ScrollTop>
       </PosedRouter>
     <ScrollToTopBtn />
