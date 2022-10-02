@@ -8,6 +8,7 @@ import CarouselCollection from '../components/CarouselCollection';
 import CarouselNew from '../components/CarouselNew';
 import AuthorList from '../components/authorList';
 import Footer from '../components/footer';
+import './customStyle.css';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -151,7 +152,7 @@ const homeone= () => (
             <div className="col-lg-2 col-sm-4 col-6 mb30">
                 <span className="box-url">
                     <img src="./img/wallet/5.png" alt="" className="mb20"/>
-                    <h4>Coinbase Wallet</h4>
+                    <h4>Coinbase</h4>
                 </span>
             </div>
 
@@ -175,7 +176,7 @@ const homeone= () => (
         <CarouselNew/>
       </section> */}
 
-      <section className='container no-top no-bottom'>
+      <section className='container no-top no-bottom '>
         <div className='row'>
           <div className="spacer-double"></div>
           <div className='col-lg-12'>
@@ -186,6 +187,7 @@ const homeone= () => (
           </div>
         </div>
       </section>
+      <div className='add-space'></div>
       <SliderMainParticle2/>
       <SliderMainParticle3/>
       {/* <section className='container no-top no-bottom'>

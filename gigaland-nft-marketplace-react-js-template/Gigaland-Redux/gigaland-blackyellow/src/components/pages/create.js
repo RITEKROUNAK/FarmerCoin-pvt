@@ -38,7 +38,7 @@ render() {
     return (
       <div>
       <GlobalStyles/>
-        <section className='jumbotron breadcumb no-bg'>
+        {/* <section className='jumbotron breadcumb no-bg'>
           <div className='mainbreadcumb'>
             <div className='container'>
               <div className='row m-10-hor'>
@@ -48,7 +48,7 @@ render() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <section className='container'>
 
@@ -56,7 +56,7 @@ render() {
           <div className="col-lg-7 offset-lg-1 mb-5">
               <form id="form-create-item" className="form-border" action="#">
                   <div className="field-set">
-                      <h5>Upload file</h5>
+                      <h5>Upload Pic</h5>
 
                       <div className="d-create-file">
                           <p id="file_name">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</p>
@@ -72,7 +72,7 @@ render() {
 
                       <div className="spacer-single"></div>
 
-                      <h5>Title</h5>
+                      <h5>Name</h5>
                       <input type="text" name="item_title" id="item_title" className="form-control" placeholder="e.g. 'Crypto Funk" />
 
                       <div className="spacer-10"></div>
@@ -87,13 +87,26 @@ render() {
 
                       <div className="spacer-10"></div>
 
-                      <h5>Royalties</h5>
-                      <input type="text" name="item_royalties" id="item_royalties" className="form-control" placeholder="suggested: 0, 10%, 20%, 30%. Maximum is 70%" />
+                      <h5>Contact</h5>
+                      <input type="number" name="item_royalties" id="item_royalties" className="form-control" placeholder="+91-976356847" />
 
                       <div className="spacer-10"></div>
 
-                      <input type="button" id="submit" className="btn-main" value="Create Item"/>
+                  <h5>Upload Govt. proof</h5>
+                  <div className="d-create-file">
+                          <p id="file_name">PNG, JPG, PDF or DOC. Max 400mb.</p>
+                          {this.state.files.map(x => 
+                          <p key="{index}">PNG, JPG, GIF, WEBP or MP4. Max 200mb.{x.name}</p>
+                          )}
+                          <div className='browse'>
+                            <input type="button" id="get_file" className="btn-main" value="Browse"/>
+                            <input id='upload_file' type="file" multiple onChange={this.onChange} />
+                          </div>
                   </div>
+                        <div className="spacer-20"></div>  
+                      <input type="button" id="submit" className="btn-main" value="Create Item"/>
+                      </div>
+
               </form>
           </div>
 

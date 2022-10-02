@@ -6,6 +6,7 @@ import {
   useMatch,
   useResolvedPath
 } from "react-router-dom";
+import pic from '../../assets/fav.png';
 import useOnclickOutside from "react-cool-onclickoutside";
 import auth from '../../core/auth';
 
@@ -123,17 +124,17 @@ const Header= function() {
               <div className='navbar-title navbar-item'>
                 <NavLink to="/">
                 <img
-                    src="/img/logo-4.png"
+                    src={pic}
                     className="img-fluid d-block"
                     alt="#"
                   />
                   <img
-                    src="/img/logo-4.png"
+                    src={pic}
                     className="img-fluid d-3"
                     alt="#"
                   />
                   <img
-                    src="/img/logo-4.png"
+                    src={pic}
                     className="img-fluid d-none"
                     alt="#"
                   />
@@ -156,18 +157,20 @@ const Header= function() {
                           >
                           Home
                         </div>
-                        {openMenu && (
-                          <div className='item-dropdown'>
-                            <div className="dropdown" onClick={closeMenu}>
-                              <NavLink to="/" onClick={() => btn_icon(!showmenu)}>Homepage</NavLink>
-                              <NavLink to="/home1" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
-                              <NavLink to="/home2" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
-                            </div>
-                          </div>
-                        )}
+                        {
+                        // openMenu && (
+                        //   <div className='item-dropdown'>
+                        //     <div className="dropdown" onClick={closeMenu}>
+                        //       <NavLink to="/" onClick={() => btn_icon(!showmenu)}>Homepage</NavLink>
+                        //       <NavLink to="/home1" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
+                        //       <NavLink to="/home2" onClick={() => btn_icon(!showmenu)}>Homepage 1</NavLink>
+                        //     </div>
+                        //   </div>
+                        // )
+                      }
                       </div>
                     </div>
-                    <div className='navbar-item'>
+                    {/* <div className='navbar-item'>
                       <div ref={ref1}>
                         <div className="dropdown-custom dropdown-toggle btn" 
                           onClick={handleBtnClick1}
@@ -224,7 +227,7 @@ const Header= function() {
                         Activity
                       </NavLink>
                     </div> */}
-                    <div className='navbar-item'>
+                    {/* <div className='navbar-item'>
                       <div ref={ref3}>
                         <div className="dropdown-custom dropdown-toggle btn" 
                           onClick={handleBtnClick3}
@@ -246,8 +249,8 @@ const Header= function() {
                           </div>
                         )}
                       </div>
-                    </div>
-                  </div>
+                    </div> */}
+                  </div> 
                   }
                 </Breakpoint>
 
@@ -259,7 +262,7 @@ const Header= function() {
                              onMouseEnter={handleBtnClick} onMouseLeave={closeMenu}>
                             Home
                             <span className='lines'></span>
-                            {openMenu && (
+                            {/* {openMenu && (
                             <div className='item-dropdown'>
                               <div className="dropdown" onClick={closeMenu}>
                                 <NavLink to="/">Homepage</NavLink>
@@ -267,12 +270,13 @@ const Header= function() {
                                 <NavLink to="/home2">Homepage 2</NavLink>
                               </div>
                             </div>
-                          )}
+                          )} */
+                          }
                           </div>
                           
                         </div>
                     </div>
-                    <div className='navbar-item'>
+                    {/* <div className='navbar-item'> */}
                       <div ref={ref1}>
                           <div className="dropdown-custom dropdown-toggle btn" 
                              onMouseEnter={handleBtnClick1} onMouseLeave={closeMenu1}>
@@ -295,8 +299,8 @@ const Header= function() {
                           </div>
                           
                         </div>
-                    </div>
-                    <div className='navbar-item'>
+                    {/* </div> */}
+                    {/* <div className='navbar-item'> */}
                       <div ref={ref2}>
                           <div className="dropdown-custom dropdown-toggle btn" 
                              onMouseEnter={handleBtnClick2} onMouseLeave={closeMenu2}>
@@ -324,14 +328,14 @@ const Header= function() {
                           )}
                           </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                     {/* <div className='navbar-item'>
                       <NavLink to="/activity">
                       Activity
                       <span className='lines'></span>
                       </NavLink>
                     </div> */}
-                    <div className='navbar-item'>
+                    {/* <div className='navbar-item'> */}
                       <div ref={ref3}>
                           <div className="dropdown-custom dropdown-toggle btn" 
                              onMouseEnter={handleBtnClick3} onMouseLeave={closeMenu3}>
@@ -353,7 +357,7 @@ const Header= function() {
                           )}
                           </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                   </div>
                 </Breakpoint>
               </BreakpointProvider>
@@ -363,7 +367,7 @@ const Header= function() {
                   <NavLink to="/wallet">Connect Wallet</NavLink>
                 </div>
                 <div className="logout">
-                  <NavLink to="/createOptions">Create</NavLink>
+                  <NavLink to="/createOptions">Connect Wallet</NavLink>
                   <div id="de-click-menu-notification" className="de-menu-notification" onClick={() => btn_icon_not(!shownot)} ref={refpopnot}>
                       <div className="d-count">8</div>
                       <i className="fa fa-bell"></i>

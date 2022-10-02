@@ -1,6 +1,7 @@
 import React from 'react';
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
+import mp1 from '../../assets/mp3.png'
 
 const fadeInUp = keyframes`
   0% {
@@ -31,18 +32,18 @@ const slidermainparticle3= () => (
     <div className="row align-items-center">
           <div className="col-md-6">
               <div className="spacer-single"></div>
-              <h6> <span className="text-uppercase color">Gigaland Market</span></h6>
-              <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
+              {/* <h6> <span className="text-uppercase color">Gigaland Market</span></h6> */}
+              {/* <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
               <h1 className="col-white">Create, sell or collect digital items.</h1>
-              </Reveal>
+              </Reveal> */}
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               <p className="lead col-white">
-              Unit of data stored on a digital ledger, called a blockchain, that certifies a digital asset to be unique and therefore not interchangeable
+              One way for a wildlife conservation.Anyone can mint and send NFTs using our platform,the generated funds will be used to protect the endangered species.
               </p>
               </Reveal>
               <div className="spacer-10"></div>
               <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
-              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Explore</span>
+              {/* <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Explore</span> */}
               <div className="mb-sm-30"></div>
               </Reveal>
 
@@ -50,7 +51,7 @@ const slidermainparticle3= () => (
               <div className="row">
                   <div className="spacer-single"></div>
                   <div className="row">
-                          <div className="col-lg-4 col-md-6 col-sm-4 mb30">
+                          {/* <div className="col-lg-4 col-md-6 col-sm-4 mb30">
                               <div className="de_count text-left">
                                   <h3><span>94215</span></h3>
                                   <h5 className="id-color">Collectibles</h5>
@@ -69,14 +70,14 @@ const slidermainparticle3= () => (
                                   <h3><span>4</span>k</h3>
                                   <h5 className="id-color">NFT Artist</h5>
                               </div>
-                          </div>
+                          </div> */}
                       </div>
               </div>
               </Reveal>
           </div>
           <div className="col-md-6 xs-hide">
           <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-              <img src="./img/misc/women-with-vr.png" className="img-fluid" alt=""/>
+              <img src={mp1} className="img-fluid" alt="" width='390px'/>
           </Reveal>
           </div>
           

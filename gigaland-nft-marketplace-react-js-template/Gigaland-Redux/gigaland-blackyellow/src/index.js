@@ -10,7 +10,8 @@ import './assets/style.scss';
 import App from './components/app';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from "react-router-dom";
-
+import Create from "./components/pages/create"
+import Header from './components/menu/header';
 //redux store
 import { Provider } from 'react-redux'
 import store from './store';
@@ -18,7 +19,9 @@ import store from './store';
 ReactDOM.render(
 	<Provider store={store}>
 		<BrowserRouter>
-			<App />
+			<Header/>
+			<Create />
+			{/* <App /> */}
 		</BrowserRouter>
 	</Provider>,
 	document.getElementById('root'));
