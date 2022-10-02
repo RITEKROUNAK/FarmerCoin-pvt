@@ -142,7 +142,7 @@ const Header= function() {
               </BreakpointProvider>
 
               <div className='mainside'>
-                <NavLink to={{pathname: "https://main-page-hack.vercel.app/"}} className="btn-main">Join Us</NavLink>
+                <a href="https://main-page-hack.vercel.app/" className="btn-main">Join Us</a>
               </div>
                   
       </div>
